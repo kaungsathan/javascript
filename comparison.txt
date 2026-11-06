@@ -1,0 +1,13 @@
+null == undefined
+
+sting - number
+string => number -> compare
+
+boolean - any
+boolean => number -> compare
+
+object - number|string
+object => primitive -> compare
+
+other -> false
+NaN > 0 -> false

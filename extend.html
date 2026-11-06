@@ -1,0 +1,48 @@
+<html>
+    <script>
+        let target = {
+            x : 100
+        }
+
+        let source = {
+            y : 200,
+            data : 500
+        }
+
+        // copy source to target
+        for (let key of Object.keys(source)) {
+            target[key] = source[key];
+        }
+
+        console.log('target', target);
+        console.log('source', source);
+
+        // copy b to a with Object.assign()
+        let a = {
+            first: "first"
+        }
+
+        let b = {
+            second: "second"
+        }
+
+        let c = Object.assign(a,b);
+
+        console.log("a ", a); // it effect a
+        console.log("b ", b);
+        console.log("c ", c);
+
+        let x = {
+            a: 100
+        }
+
+        let y = {
+            b: 200
+        }
+
+        let z = {...x, ...y};
+        console.log('x ', x); // it doesn't effect x or y
+        console.log('y ', y);
+        console.log('z ', z);
+    </script>
+</html>

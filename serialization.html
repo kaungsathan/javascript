@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let obj = {
+            name: 'jhon',
+            age: 20,
+            display()
+            {
+                console.log('Name ', this.name, 'Age ', this.age)
+            }
+        }
+
+        obj.display();
+
+        let str = JSON.stringify(obj);
+        console.log('str ', str);
+        let obj2 = JSON.parse(str); //obj2 doesn't have methods cause of stringfy
+        console.log('obj2 ', obj2);
+    </script>
+</html>

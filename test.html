@@ -1,0 +1,29 @@
+<html>
+    <script>
+        obj = {
+            valueOf()
+            {
+                console.log('call valueOf');
+                return {};
+            },
+            toString()
+            {
+                console.log('call toString')
+                return "";
+            }
+        };
+        <!-- console.log("obj", obj); -->
+        console.log("''+obj", '' + obj);
+        console.log("+obj", +obj);
+
+        console.log("0 == null", 0 == null);
+        console.log("0 == undefined", 0 == undefined);
+        console.log("null == undefined", null == undefined);
+
+        //console.log("false + 1 ", false + 1);
+        //console.log("true + 1 ", true + 1);
+       // console.log("'true' * 1", 'true' * 1);
+        //console.log("'' * 1", '' * 1);
+        //console.log("null * 1", null * 1); 
+    </script>
+</html>

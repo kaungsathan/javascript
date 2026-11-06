@@ -1,0 +1,17 @@
+<html>
+    <script>
+        let obj = {
+            items: [200, 300]
+        }
+
+        let obj2 = {...obj}
+        obj2.items.push(400);
+        console.log('obj ', obj);
+        console.log('obj2 ', obj2); // they are referenced same object
+
+        let obj3 = JSON.parse(JSON.stringify(obj));
+        obj3.items.push(500);
+        console.log('obj ', obj);
+        console.log('obj3 ', obj3); // different object cause of stringify
+    </script>
+</html>
