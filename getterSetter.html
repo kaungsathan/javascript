@@ -1,0 +1,41 @@
+<html>
+    <script>
+        let circle = {
+            radius: 20,
+            get area()
+            {
+                return Math.PI * this.radius * this.radius;
+            }
+        }
+
+        console.log('Circle area ', circle.area);
+
+        let item = {
+            name: 'Apple',
+            price: 10,
+            qty: 5,
+            get total()
+            {
+                return this.price * this.qty;
+            }
+        }
+        console.log('total ', item.total);
+
+        let obj = {
+            name: 'Jhon',
+            get age() 
+            {
+                return this._age;
+            },
+            set age(value)
+            {
+                if (value > 0 && value <= 100)
+                    this._age = value;
+            }
+        }
+
+        obj.age = 300;
+        obj.age = 30;
+        console.log('obj ', obj);
+    </script>
+</html> 
